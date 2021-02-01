@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/css/normalize.css")
+    link(rel="stylesheet", href="/css/app.css")
+    title #{namePage}
+  body
+    header.barra
+      h1 UpTask - Admin projects
+      a(href="#", target="_blank", rel="noopener noreferrer") Close session
+    main.contenedor
+      aside.contenedor-proyectos
+        .panel.crear-proyecto
+          a(href="/new-project" class="boton") New project
+            span +
+        .panel.lista-proyectos
+          h2 Projects #{year}
+          ul#proyectos.proyectos
+            if (proyectos.length)
+              each proyecto in proyectos
+                li
+                  a(href=`/proyectos/${proyecto.url}`)= proyecto.nombre
+      block contenido
+      //pre=vardump(proyectos)
+
