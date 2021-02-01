@@ -1,1 +1,1 @@
-alert('Hola')
+import proyectos from './modulos/proyectos';
