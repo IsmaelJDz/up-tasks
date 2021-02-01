@@ -1,6 +1,6 @@
 # Fullstack upload tasks
 
-![Design preview for the Easybank landing page coding challenge](./.static_files/desktop-preview.jpg)
+![Captura de la app](./.readme-static/desktop-preview.png)
 
 ## Welcome! 👋
 
